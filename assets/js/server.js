@@ -36,7 +36,7 @@ const server = app.listen(port, listening);
  * @description Function to log the port where the server is running
  */
 function listening() {
-    console.log(`Servidor rodando na porta: ${port}`);
+    console.log(`Server running on port: ${port}`);
 }
 
 // GET route returns projectData

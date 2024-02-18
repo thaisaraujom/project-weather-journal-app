@@ -24,7 +24,6 @@ function performAction(e) {
     console.log('Feelings:', feelings);
     
     getApiKey().then(apiKey => {
-        console.log("Chave da API:", apiKey);
         
         const fullUrl = `${baseUrl}${zipCode}&appid=${apiKey}&units=metric`;
         console.log('Full URL:', fullUrl);
@@ -42,7 +41,7 @@ function performAction(e) {
                 retrieveData();
             })
             .catch(error => {
-                console.log("Erro: ", error);
+                console.log("Error: ", error);
             });
         });
 }
@@ -59,7 +58,7 @@ const getWeatherData = async (url) => {
         const data = await res.json();
         return data;
     } catch (error) {
-        console.log("Erro: ", error);
+        console.log("Error: ", error);
     }
 };
 
