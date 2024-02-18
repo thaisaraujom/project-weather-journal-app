@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal App</title>
+    <link rel="stylesheet" href="./assets/css/styles.css"> <!-- Make sure to create a CSS file to style your page -->
+</head>
+<body>
+    <header>
+        <h1>Weather Journal App</h1>
+    </header>
+
+    <main>
+        <section id="entry">
+            <h2>Enter Your Information</h2>
+            <form id="weatherForm">
+                <div class="input-group">
+                    <label for="zip">Postal Code:</label>
+                    <input type="text" id="zip" name="zip" placeholder="Enter the postal code" required>
+                </div>
+                <div class="input-group">
+                    <label for="feelings">How are you feeling today?</label>
+                    <textarea id="feelings" name="feelings" placeholder="Describe your feelings" required></textarea>
+                </div>
+                <button type="submit" id="generate">Generate</button>
+            </form>
+        </section>
+
+        <section id="entryResult">
+            <h2>Results</h2>
+            <div id="date"></div>
+            <div id="temp"></div>
+            <div id="content"></div>
+        </section>
+    </main>
+
+    <script src="./assets/js/app.js"></script> <!-- Your JavaScript code goes here -->
+</body>
+</html>
